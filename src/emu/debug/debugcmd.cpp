@@ -275,7 +275,6 @@ debugger_commands::debugger_commands(running_machine& machine, debugger_cpu& cpu
 	m_console.register_command("mapd",      CMDFLAG_NONE, AS_DATA, 1, 1, std::bind(&debugger_commands::execute_map, this, _1, _2));
 	m_console.register_command("mapi",      CMDFLAG_NONE, AS_IO, 1, 1, std::bind(&debugger_commands::execute_map, this, _1, _2));
 	m_console.register_command("mapo",      CMDFLAG_NONE, AS_OPCODES, 1, 1, std::bind(&debugger_commands::execute_map, this, _1, _2));
-	m_console.register_command("memdump",   CMDFLAG_NONE, 0, 0, 1, std::bind(&debugger_commands::execute_memdump, this, _1, _2));
 
 	m_console.register_command("symlist",   CMDFLAG_NONE, 0, 0, 1, std::bind(&debugger_commands::execute_symlist, this, _1, _2));
 
@@ -3095,7 +3094,7 @@ void debugger_commands::execute_map(int ref, const std::vector<std::string> &par
 		taddress = address & space->addrmask();
 		if (space->device().memory().translate(space->spacenum(), intention, taddress))
 		{
-			const char *mapname = space->get_handler_string((intention == TRANSLATE_WRITE_DEBUG) ? read_or_write::WRITE : read_or_write::READ, taddress);
+			std::string mapname = space->get_handler_string((intention == TRANSLATE_WRITE_DEBUG) ? read_or_write::WRITE : read_or_write::READ, taddress);
 			m_console.printf(
 					"%7s: %0*X logical == %0*X physical -> %s\n",
 					intnames[intention & 3],
@@ -3105,30 +3104,6 @@ void debugger_commands::execute_map(int ref, const std::vector<std::string> &par
 		}
 		else
 			m_console.printf("%7s: %0*X logical is unmapped\n", intnames[intention & 3], space->logaddrchars(), address);
-	}
-}
-
-
-/*-------------------------------------------------
-    execute_memdump - execute the memdump command
--------------------------------------------------*/
-
-void debugger_commands::execute_memdump(int ref, const std::vector<std::string> &params)
-{
-	FILE *file;
-	const char *filename;
-
-	filename = params.empty() ? "memdump.log" : params[0].c_str();
-
-	m_console.printf("Dumping memory to %s\n", filename);
-
-	file = fopen(filename, "w");
-	if (file)
-	{
-		memory_interface_iterator iter(m_machine.root_device());
-		for (device_memory_interface &memory : iter)
-			memory.dump(file);
-		fclose(file);
 	}
 }
 
