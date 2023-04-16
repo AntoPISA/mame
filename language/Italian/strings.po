@@ -115,7 +115,7 @@ msgstr "Cheat"
 
 #: src/frontend/mame/ui/dirmenu.cpp:45 src/frontend/mame/ui/selmenu.cpp:71
 msgid "Snapshots"
-msgstr "Istantanee"
+msgstr "Schermate"
 
 #: src/frontend/mame/ui/dirmenu.cpp:46 src/frontend/mame/ui/selmenu.cpp:72
 msgid "Cabinets"
@@ -147,7 +147,7 @@ msgstr "Puntatori"
 
 #: src/frontend/mame/ui/dirmenu.cpp:54
 msgid "Artworks"
-msgstr "Disegni"
+msgstr "Grafica"
 
 #: src/frontend/mame/ui/dirmenu.cpp:55 src/frontend/mame/ui/selmenu.cpp:79
 msgid "Bosses"
@@ -155,7 +155,7 @@ msgstr "Boss"
 
 #: src/frontend/mame/ui/dirmenu.cpp:56
 msgid "Artworks Preview"
-msgstr "Anteprima Disegni"
+msgstr "Anteprima Grafica"
 
 #: src/frontend/mame/ui/dirmenu.cpp:57 src/frontend/mame/ui/selmenu.cpp:85
 msgid "Select"
@@ -179,7 +179,7 @@ msgstr "Punteggi"
 
 #: src/frontend/mame/ui/dirmenu.cpp:62 src/frontend/mame/ui/selmenu.cpp:81
 msgid "Versus"
-msgstr "Contro"
+msgstr "Scontro"
 
 #: src/frontend/mame/ui/dirmenu.cpp:63 src/frontend/mame/ui/selmenu.cpp:87
 msgid "Covers"
@@ -1115,7 +1115,7 @@ msgstr "[crea]"
 #: src/frontend/mame/ui/filesel.cpp:320
 #, c-format
 msgid "Error accessing %s"
-msgstr ""
+msgstr "Errore accedendo a %s"
 
 #: src/frontend/mame/ui/filesel.cpp:536
 msgid "Select access mode"
@@ -1596,11 +1596,11 @@ msgstr "Audio\tOK\n"
 
 #: src/frontend/mame/ui/selgame.cpp:1079
 msgid "Capture\tUnimplemented\n"
-msgstr ""
+msgstr "Cattura\tNon implementata\n"
 
 #: src/frontend/mame/ui/selgame.cpp:1081
 msgid "Capture\tImperfect\n"
-msgstr ""
+msgstr "Cattura\tImperfetta\n"
 
 #: src/frontend/mame/ui/selgame.cpp:1084
 msgid "Camera\tUnimplemented\n"
@@ -1644,11 +1644,11 @@ msgstr "Mouse\tImperfetto\n"
 
 #: src/frontend/mame/ui/selgame.cpp:1109
 msgid "Media\tUnimplemented\n"
-msgstr ""
+msgstr "Media\tNon implementato\n"
 
 #: src/frontend/mame/ui/selgame.cpp:1111
 msgid "Media\tImperfect\n"
-msgstr ""
+msgstr "Media\tImperfetto\n"
 
 #: src/frontend/mame/ui/selgame.cpp:1114
 msgid "Disk\tUnimplemented\n"
@@ -1668,19 +1668,19 @@ msgstr "Stampante\tImperfetta\n"
 
 #: src/frontend/mame/ui/selgame.cpp:1124
 msgid "Mag. Tape\tUnimplemented\n"
-msgstr ""
+msgstr "Nastro\tNon implementato\n"
 
 #: src/frontend/mame/ui/selgame.cpp:1126
 msgid "Mag. Tape\tImperfect\n"
-msgstr ""
+msgstr "Nastro\tImperfetto\n"
 
 #: src/frontend/mame/ui/selgame.cpp:1129
 msgid "Punch Tape\tUnimplemented\n"
-msgstr ""
+msgstr "Nastro Perforato\tNon implementato"
 
 #: src/frontend/mame/ui/selgame.cpp:1131
 msgid "Punch Tape\tImperfect\n"
-msgstr ""
+msgstr "Nastro Perforato\tImperfetto\n"
 
 #: src/frontend/mame/ui/selgame.cpp:1134
 msgid "Mag. Drum\tUnimplemented\n"
@@ -1692,19 +1692,19 @@ msgstr ""
 
 #: src/frontend/mame/ui/selgame.cpp:1139
 msgid "(EP)ROM\tUnimplemented\n"
-msgstr ""
+msgstr "EPROM\tNon implementata\n"
 
 #: src/frontend/mame/ui/selgame.cpp:1141
 msgid "(EP)ROM\tImperfect\n"
-msgstr ""
+msgstr "EPROM\tImperfetta\n"
 
 #: src/frontend/mame/ui/selgame.cpp:1144
 msgid "Communications\tUnimplemented\n"
-msgstr ""
+msgstr "Communicazioni\tNon implementate\n"
 
 #: src/frontend/mame/ui/selgame.cpp:1146
 msgid "Communications\tImperfect\n"
-msgstr ""
+msgstr "Communicationi\tImperfette\n"
 
 #: src/frontend/mame/ui/selgame.cpp:1149
 msgid "LAN\tUnimplemented\n"
@@ -1732,11 +1732,11 @@ msgstr "Temporizzazione\tImperfetta\n"
 
 #: src/frontend/mame/ui/selgame.cpp:1163
 msgid "Mechanical Machine\tYes\n"
-msgstr ""
+msgstr "Macchina Meccaninca\tSi\n"
 
 #: src/frontend/mame/ui/selgame.cpp:1163
 msgid "Mechanical Machine\tNo\n"
-msgstr ""
+msgstr "Macchina Meccanica\tNo\n"
 
 #: src/frontend/mame/ui/selgame.cpp:1164
 msgid "Requires Artwork\tYes\n"
@@ -1764,11 +1764,11 @@ msgstr "Supporto Cocktail\tNo\n"
 
 #: src/frontend/mame/ui/selgame.cpp:1167
 msgid "Driver is BIOS\tYes\n"
-msgstr ""
+msgstr "Il Driver è un BIOS\tSi\n"
 
 #: src/frontend/mame/ui/selgame.cpp:1167
 msgid "Driver is BIOS\tNo\n"
-msgstr ""
+msgstr "Il Driver è un BIOS\tNo\n"
 
 #: src/frontend/mame/ui/selgame.cpp:1168
 msgid "Support Save\tYes\n"
@@ -1780,11 +1780,11 @@ msgstr "Supporto Salvataggio\tNo\n"
 
 #: src/frontend/mame/ui/selgame.cpp:1169
 msgid "Screen Orientation\tVertical\n"
-msgstr ""
+msgstr "Orientazione Schermo\tVerticale\n"
 
 #: src/frontend/mame/ui/selgame.cpp:1169
 msgid "Screen Orientation\tHorizontal\n"
-msgstr ""
+msgstr "Orientazione Schermo\tOrizzontale\n"
 
 #: src/frontend/mame/ui/selgame.cpp:1179
 msgid "Requires CHD\tYes\n"
@@ -1796,29 +1796,31 @@ msgstr "Richiede CHD\tNo\n"
 
 #: src/frontend/mame/ui/selgame.cpp:1192
 msgid "ROM Audit Result\tOK\n"
-msgstr ""
+msgstr "Risulatao Verifica ROM\tOK\n"
 
 #: src/frontend/mame/ui/selgame.cpp:1194
 msgid "ROM Audit Result\tBAD\n"
-msgstr ""
+msgstr "Risultato Verifica ROM\tERRORI\n"
 
 #: src/frontend/mame/ui/selgame.cpp:1197
 msgid "Samples Audit Result\tNone Needed\n"
-msgstr ""
+msgstr "Risultato Verifica Sample\tNon Necessario\n"
 
 #: src/frontend/mame/ui/selgame.cpp:1199
 msgid "Samples Audit Result\tOK\n"
-msgstr ""
+msgstr "Risultato Verifica Sample\tOK\n"
 
 #: src/frontend/mame/ui/selgame.cpp:1201
 msgid "Samples Audit Result\tBAD\n"
-msgstr ""
+msgstr "Risultato Verifica Sample\tERRORI\n"
 
 #: src/frontend/mame/ui/selgame.cpp:1205
 msgid ""
 "ROM Audit \tDisabled\n"
 "Samples Audit \tDisabled\n"
 msgstr ""
+"Verifica ROM \tDisabilitato\n"
+"Verifica Sample \tDisabilitato\n"
 
 #: src/frontend/mame/ui/selgame.cpp:1396
 #, c-format
@@ -1967,11 +1969,11 @@ msgstr "Inverti Y"
 
 #: src/frontend/mame/ui/submenu.cpp:56
 msgid "Artwork Options"
-msgstr "Opzioni Disegni"
+msgstr "Opzioni Grafica"
 
 #: src/frontend/mame/ui/submenu.cpp:57
 msgid "Artwork Crop"
-msgstr "Taglia Disegno"
+msgstr "Taglia Grafica"
 
 #: src/frontend/mame/ui/submenu.cpp:58
 msgid "Use Backdrops"
